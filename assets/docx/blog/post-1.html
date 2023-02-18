@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Secure Password Protection with Magic Auth</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!--Styles-->
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="container">
+        <header class="header">
+            <nav class="nav-bar">
+                <div id="logo">
+                    <img src="/assets/img/logo.png" alt="logo">
+                </div>
+            </nav>
+        </header>
+        <main id="blog-post">
+            <section>
+                <h1>Secure Password Protection with Magic Auth</h1>
+                <h3 class="articledate">January 11, 2023</h3>
+                <a href="/assets/docx/blog/post-1.html" target="_blank" class="btn-mobile-only">View in webpage</a>                <p>The rapid growth of Web3 has provided some of the most innovative technology in the world of online finance, computing, and governance. The prospects of decentralization offer incredible possibilities to creators and users alike, with an immeasurable number of developers who provide tools that defend online freedom, and self-sovereignty. A common topic you might hear when discussing the benefits of blockchain tech would be the existence of truly sovereign assets, entities, and identities. In other words, no third party controls nor owns user data.</p>
+                <p>To explain briefly, <strong>decentralization </strong>is an organizational practice that <strong>removes authoritative power from a central figure or group</strong> by allowing everyone to opt into decision-making. This practice reduces the risk of corruption, manipulation, or fraud as all decisions are democratically voted and transparent through the use of a blockchain. The <strong>blockchain </strong>acts as a <strong>ledger </strong>by publically storing and verifying the records (blocks) of everyone who participates in the chain. Each block in a specified chain is connected to one another by encapsulating a bit of data about the block preceding it. This makes it virtually impossible to corrupt a blockchain without notice because to manipulate one block successfully, you would have to go back and change every single block until you get to the very first in that chain (the genesis block).</p>
+                <p>Magic Labs provides a decentralized alternative to the typical username-password system seen on most websites titled Magic Auth. Auth is a developer SDK that provides a &#8220;plug-in-play&#8221; passwordless login method for developers to include in their web applications running on the Ethereum blockchain.</p>
+                <p><strong>Here is an example of a modern login system:</strong> If I wanted to set up an account with Facebook, I would have to create a unique username-password to protect my account. My login information is then sent to Facebook servers, I am supposed to trust their servers to keep my data safe and hidden. I&#8217;m sure most people reading this post remember Facebook&#8217;s scandal of selling user data, but regardless of the third party&#8217;s intention with your data, servers are not as protected as you think. Anyone could easily break into these servers and steal your information giving them access to your account. According to the article referenced, </p>
+                <p class="has-text-align-center"><em>“81% of all breaches are due to passwords, and 59% of people reuse their passwords everywhere”.</em></p>
+                <p><strong>How Magic Auth changes the login system:</strong> Let&#8217;s say Facebook began using Magic Auth, I click login and am prompted to enter my email address. Once doing so, I am sent an email containing a &#8220;Magic link&#8221;. Upon clicking on the magic link, I am securely logged into my account! Behind the scenes, Magic generates a unique public/private key pair with the email and device you used. A public key is safe to be shared and acts as a username. The private key signs and generates an identity token which is sent to Facebook&#8217;s server and verifies your identity by matching the private key with the public key on Facebook&#8217;s server. The public key represents your account, and the private key represents proof of identity, an online passport so to speak. The app that stores your public key will never see your private key, your private key is in fact highly encrypted and virtually impossible to decrypt.</p>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://github.com/da-ocampo" target="_blank" rel="noopener noreferrer"><p>Designed and Built by Daniel Ocampo</p></a>
+            <a href="mailto:daocampo2002@gmail.com" target="_blank" rel="noopener noreferrer">daocampo2002@gmail.com</a>
+        </footer>
+        
+        <script src="./js/script.js"></script>
+    </body>
+</html>
