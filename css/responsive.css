@@ -7,17 +7,8 @@
         display: flex;
         flex-direction: column;
     }
-    
-    .post-preview:nth-child(1),
-    .post-preview:nth-child(2),
-    .post-preview:nth-child(3) {
-        display: inline-block;
-    }
-    
-    .post-preview:nth-child(1),
-    .post-preview:nth-child(4) {
-        margin-left: 0;
-    }
+
+    /* Navigation Elements */
 
     .nav-list ol li:nth-child(1) {
         animation: TopTransitionIn 1s;
@@ -38,9 +29,29 @@
     .nav-list ol li:nth-child(5) {
         animation: TopTransitionIn 3s;
     }
+
+    /* Blog Elements */
+    
+    .post-preview:nth-child(1),
+    .post-preview:nth-child(2),
+    .post-preview:nth-child(3) {
+        display: inline-block;
+    }
+    
+    .post-preview:nth-child(1),
+    .post-preview:nth-child(4) {
+        margin-left: 0;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Body Elements */
+
+    .btn-mobile-only {
+        display: inline-block;
+    }
+
     section {
         margin: 0 2%;
     }
@@ -51,36 +62,45 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+
+    /* Body Elements */
+
     .btn-mobile-only {
         display: inline-block;
     }
 
     section {
-        margin: 0 3%;
+        margin: 0 4%;
     }
+        
+    section h1 {
+        font-size: 2em;
+    }
+
+    /* Blog Elements */
 
     .blog-posts-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        flex-basis: 49%;
+        flex-basis: 50%;
     }
 
     .post-preview {
         width: 49%;
     }
-    
-    section h1 {
-        font-size: 2em;
-    }
 }
 
 @media all and (max-width: 480px) {
 
+    /* Navigation Elements */
+
     .nav-list {
         display: none;
     }
+
+    /* Blog Elements */
     
     .blog-posts-container {
         display: block;
@@ -92,26 +112,17 @@
         margin-bottom: 1.5em;
     }
 
-    .btn-mobile-only {
-        display: inline-block;
+    .window {
+        width: 300px;
+        height: 500px;
     }
+
+    /* Social Media Links*/
 
     .sideSocials {
         display: none;
     }
 
-    section {
-        margin: 0 3%;
-    }
-
-    .introh1 {
-        font-size: 2.5em;
-    }
-    
-    #mobile-social {
-        display: block;
-    }
-    
     .SocialList {
         display: flex;
         justify-content: space-between;
@@ -135,6 +146,25 @@
         display: block;
         margin: 0 auto;
     }
+    
+    #mobile-social {
+        display: block;
+    }
+
+    /* Body Elements*/
+
+    .btn-mobile-only {
+        display: inline-block;
+    }
+
+    section {
+        margin: 0 3%;
+    }
+
+    .introh1 {
+        font-size: 2.5em;
+    }
+
 }
 
 /* Portrait */
