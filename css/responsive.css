@@ -54,7 +54,17 @@
 
 @media all and (min-width: 480px) and (max-width: 768px) {
 
+    body::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
+    body::-webkit-scrollbar-track {
+        display: none;    
+    }
+
     /* Body Elements */
+
+
 
     .btn-mobile-only {
         display: inline-block;
@@ -110,12 +120,20 @@
 
     /* Body Elements*/
 
+    .header {
+        padding: 40px 25px;
+    }
+
+    main {
+        margin-top: 6em;
+    }
+
     .btn-mobile-only {
         display: inline-block;
     }
 
     section {
-        margin: 0 2%;
+        margin: 0 8%;
     }
 
     .introh1 {

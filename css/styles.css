@@ -33,8 +33,10 @@ html {
 /* Header Elements*/
 
 .header {
-    padding: 20px 40px;
+    padding: 20px 50px;
     display: flex;
+    position: fixed;
+    width: 100%;
 }
 
 #logo {
@@ -42,6 +44,7 @@ html {
 }
 
 #logo img {
+    max-width: 100%;
     width: 10%;
     transition: height 0.5s ease-out;
 }
@@ -108,6 +111,7 @@ body {
 }
 
 main {
+    margin-top: 10em;
     animation: transitionIn 3s;
 }
 
@@ -117,7 +121,7 @@ main p {
 
 section {
     margin: 0 30%;
-    padding: 1em;
+    padding: 1em 0;
     align-content: center;
 }
 
@@ -180,6 +184,21 @@ a p:hover, li a:hover {
     text-decoration: none;
     transform: scale(0.98);
 }
+
+.social-icon img {
+    max-width: 100%;
+    width: 5%;
+    margin-right: 1em;
+    will-change: transform;
+    transition: transform 450ms;
+}
+
+.social-icon img:hover {
+    opacity: 0.6;
+    transition: transform 125ms;
+    transform: translateY(-10px);
+}
+
 
 /* Video Elements */
 
@@ -314,6 +333,7 @@ footer {
 .window .content {
     width: 100%;
     height: calc(100% - 40px);
+    border: none;
 }
 
 .resizer {

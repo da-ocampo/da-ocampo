@@ -18,9 +18,12 @@
     <body id="container">
         <header class="header">
             <nav class="nav-bar">
-                <div id="logo">
-                    <a href="index.html"><img src="./assets/img/logo.png" alt="logo"></a>
-                </div>
+                <a href="index.html">
+                    <div id="logo">
+                        <img src="./assets/img/logo.png" alt="logo">
+                    </div>
+                </a>
+                
 
                 <div class="nav-list">
                     <ol>
@@ -28,7 +31,7 @@
                         <li><a href="#blog">Blog.</a></li>
                         <li><a href="#portfolio">Portfolio.</a></li>
                         <li><a href="#contact">Contact.</a></li>
-                        <li><a href="./assets/docx/resume.pdf" class="btn" target="_blank">Resume</a></li>
+                        <li><a href="./assets/docx/resume.pdf" target="_blank">Resume.</a></li>
                     </ol>
                 </div>        
             </nav>
@@ -54,26 +57,21 @@
                 <h2>About.</h2>
                 <div class="section-content">
                     <p>Hello! my name is Daniel and I have a passion for creating immersive websites. I am a self-taught front-end developer with experience in multiple programming languages and frameworks. Throughout my career, I have worked as an independent developer, leveraging my self-starting mentality to deliver exceptional results. My interest in web development was sparked in 2018 when I began building small websites for local friends and musicians, and I have been hooked ever since.</p>
-
-                    <a href="https://www.linkedin.com/in/daocampo/" target="_blank">
-                        <picture>
-                            <source media="(max-width: 750px)" srcset="images\socials\450\instagram_450px.png">
-                            <source media="(max-width: 1000px)" srcset="images\socials\750\instagram_750px.png">
-                            <source srcset="images\socials\1000\instagram_1000px.png">
-                    
-                            <img src="images\socials\750\instagram_750px.png"
-                            alt="Linkedin Logo">
-                        </picture>
+                    <a href="https://www.linkedin.com/in/daocampo/" class="social-icon" target="_blank">
+                        <img 
+                        src="./assets/img/linkedin/linkedin.png"
+                        srcset="./assets/img/linkedin/linkedin-96.png 96w, ./assets/img/linkedin/linkedin-48.png 48w, ./assets/img/linkedin/linkedin-24.png 24w"
+                        sizes="(max-width: 600px) 100vw, 50vw"
+                        alt="Linkedin Icon"
+                        >                  
                     </a>
-                    <a href="https://github.com/da-ocampo" target="_blank">
-                        <picture>
-                            <source media="(max-width: 750px)" srcset="images\socials\450\twitter_450px.png">
-                            <source media="(max-width: 1000px)" srcset="images\socials\750\twitter_750px.png">
-                            <source srcset="images\socials\1000\twitter_1000px.png">
-                    
-                            <img src="images\socials\750\twitter_750px.png"
-                            alt="Github Logo">
-                        </picture>
+                    <a href="https://github.com/da-ocampo" class="social-icon" target="_blank">
+                        <img 
+                        src="./assets/img/github/github.png"
+                        srcset="./assets/img/github/github-96.png 96w, ./assets/img/github/github-48.png 48w, ./assets/img/github/github-24.png 24w"
+                        sizes="(max-width: 600px) 100vw, 50vw"
+                        alt="Github Icon"
+                        >           
                     </a>   
                 </div>
             </section>
@@ -169,8 +167,7 @@
                 <h2>Portfolio.</h2>
                 <div class="section-content">
                     <h3><a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer"><p>danielsgone.com (v1)</p></a></h3>
-                    <p>Since November 2021, I have been responsible for developing and maintaining the website for "Daniel's Gone", a music project. The website, built using HTML, CSS, and JavaScript, serves as a hub for fans, providing links to various popular streaming platforms and other ventures under the project's name. <br><br>In addition to creating all front-end components, I also designed all website assets using Photoshop. <br><br>Currently, the website is undergoing a rebranding process, hence the reference to "v1". Once the latest iteration is launched, I will continue to oversee updates and enhancements to ensure optimal functionality and user experience."</p>
-
+                    <p>Since November 2021, I have been responsible for developing and maintaining the website for "Daniel's Gone", a music project. The website, built using HTML, CSS, and JavaScript, serves as a hub for fans, providing links to various popular streaming platforms and other ventures under the project's name. <br><br>In addition to creating all front-end components, I also designed all website assets using Photoshop.</p>
                     <h4>Hover over this box to view a demo!</h4>
                     <div class="portfolio-content">
                         <a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">
@@ -179,6 +176,7 @@
                             </video>
                         </a>
                     </div>
+                    <p>Currently, the website is undergoing a rebranding process, hence the reference to "v1". Once the latest iteration is launched, I will continue to oversee updates and enhancements to ensure optimal functionality and user experience."</p>
                 </div>
             </section>
 
