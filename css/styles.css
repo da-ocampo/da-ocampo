@@ -145,26 +145,6 @@ a p:hover, li a:hover {
 
 /* Buttons */
 
-.btn-mobile-only {
-    display: none;
-    border: 2px solid #000;
-    background-color: #000;
-    border-radius: 6px;
-    color: #fff;
-    margin: 1em 0;
-    opacity: 1;
-    transition: 0.3s;
-    padding: 0.75em 1em;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-mobile-only:hover {
-    opacity: 0.6;
-    text-decoration: none;
-    transform: scale(0.98);
-}
-
 .btn {
     display: inline-block;
     border: 2px solid #000;
@@ -180,6 +160,26 @@ a p:hover, li a:hover {
 }
 
 .btn:hover {
+    opacity: 0.6;
+    text-decoration: none;
+    transform: scale(0.98);
+}
+
+.btn-mobile-only {
+    display: none;
+    border: 2px solid #000;
+    background-color: #000;
+    border-radius: 6px;
+    color: #fff;
+    margin: 1em 0;
+    opacity: 1;
+    transition: 0.3s;
+    padding: 0.75em 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-mobile-only:hover {
     opacity: 0.6;
     text-decoration: none;
     transform: scale(0.98);

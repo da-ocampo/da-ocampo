@@ -1,4 +1,4 @@
-@import "styles.css";
+@import "/css/styles.css";
 @import url("/css/styles.css");
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {
@@ -43,16 +43,21 @@
 
     /* Body Elements */
 
+    section {
+        margin: 0 2%;
+    }
+
+    /* Button Elements */
+
     .btn-mobile-only {
         display: inline-block;
     }
 
-    section {
-        margin: 0 2%;
-    }
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+
+    /* Scrollbar Elements */
 
     body::-webkit-scrollbar-thumb {
         display: none;
@@ -62,7 +67,7 @@
         display: none;    
     }
 
-    /* Body Elements */
+    /* Header Elements */
 
     .header {
         position: relative;
@@ -73,12 +78,10 @@
         width: 2em;
     }
 
+    /* Body Elements */
+
     main {
         margin-top: 0;
-    }
-
-    .btn-mobile-only {
-        display: inline-block;
     }
 
     section {
@@ -102,9 +105,17 @@
     .post-preview {
         width: 49%;
     }
+
+    /* Button Elements */
+
+    .btn-mobile-only {
+        display: inline-block;
+    }
 }
 
 @media all and (max-width: 480px) {
+
+    /* Scrollbar Elements */
 
     body::-webkit-scrollbar-thumb {
         display: none;
@@ -112,6 +123,17 @@
 
     body::-webkit-scrollbar-track {
         display: none;    
+    }
+
+    /* Header Elements */
+
+    .header {
+        position: relative;
+        padding: 2em 2em;
+    }
+
+    #logo img {
+        width: 2em;
     }
 
     /* Navigation Elements */
@@ -139,21 +161,8 @@
 
     /* Body Elements*/
 
-    .header {
-        position: relative;
-        padding: 2em 2em;
-    }
-
-    #logo img {
-        width: 2em;
-    }
-
     main {
         margin-top: 0;
-    }
-
-    .btn-mobile-only {
-        display: inline-block;
     }
 
     section {
@@ -163,6 +172,13 @@
     .introh1 {
         font-size: 2.5em;
     }
+
+    /* Button Elements */
+
+    .btn-mobile-only {
+        display: inline-block;
+    }
+
 
 }
 
