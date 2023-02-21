@@ -60,25 +60,6 @@ video.addEventListener("mouseout", function() {
   video.pause();
 }); // Pause Video When Mouse is ff
 
-// Set initial dark mode preference based on user settings
-
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-	// User has dark mode preference
-	document.body.classList.add('dark-mode');
-	document.getElementById('toggle-dark-mode').checked = true;
-}
-
-// Add event listener to toggle switch
-document.getElementById('toggle-dark-mode').addEventListener('change', function() {
-	if (this.checked) {
-		// User has toggled to dark mode
-		document.body.classList.add('dark-mode');
-	} else {
-		// User has toggled to light mode
-		document.body.classList.remove('dark-mode');
-	}
-});
-
 /* Blog Post Window */
 
 function openWindow(url) {
