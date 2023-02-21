@@ -187,17 +187,32 @@ a p:hover, li a:hover {
 
 /* Video Elements */
 
-.video {
+video {
+    border: 1.5px solid #000;
+    border-radius: 6px;
+}
+
+#videoPlay {
     opacity: 0.6;
     transition: 0.3s;
-    cursor: pointer;
-    border: 2px solid #000;
-    border-radius: 6px;
     margin-top: 2em;
 }
 
-.video:hover {
+#videoPlay:hover {
     opacity: 1;
+}
+
+.video-container {
+    display: flex;
+    margin: 1em 0;
+}
+
+.video-container a video {
+    flex: 1;
+}
+
+.video-container a video:not(:last-child) {
+    margin-right: 1em;
 }
 
 /* Footer Elements */
