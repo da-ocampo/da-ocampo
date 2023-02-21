@@ -64,7 +64,18 @@
 
     /* Body Elements */
 
+    .header {
+        position: relative;
+        padding: 2em 2em;
+    }
 
+    #logo img {
+        width: 2em;
+    }
+
+    main {
+        margin-top: 0;
+    }
 
     .btn-mobile-only {
         display: inline-block;
@@ -95,6 +106,14 @@
 
 @media all and (max-width: 480px) {
 
+    body::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
+    body::-webkit-scrollbar-track {
+        display: none;    
+    }
+
     /* Navigation Elements */
 
     .nav-list {
@@ -121,11 +140,16 @@
     /* Body Elements*/
 
     .header {
-        padding: 40px 25px;
+        position: relative;
+        padding: 2em 2em;
+    }
+
+    #logo img {
+        width: 2em;
     }
 
     main {
-        margin-top: 6em;
+        margin-top: 0;
     }
 
     .btn-mobile-only {
@@ -133,7 +157,7 @@
     }
 
     section {
-        margin: 0 8%;
+        margin: 0 2em;
     }
 
     .introh1 {
