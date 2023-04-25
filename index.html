@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Daniel Ocampo</title>
         <!--Favicons-->
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
-        <link rel="mask-icon" href="/assets/img/logo.svg" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+        <link rel="mask-icon" href="./assets/img/logo.svg" color="#5bbad5">
         <!--Styles-->
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/responsive.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/responsive.css">
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +22,9 @@
     <body id="container">
         <header class="header">
             <nav class="nav-bar">
-                <a href="index">
+                <a href="index.html">
                     <div id="logo">
-                        <img src="/assets/img/logo.png" alt="logo">
+                        <img src="./assets/img/logo.png" alt="logo">
                     </div>
                 </a>
                 
@@ -34,7 +34,7 @@
                         <li><a href="#blog">Blog.</a></li>
                         <li><a href="#portfolio">Portfolio.</a></li>
                         <li><a href="#contact">Contact.</a></li>
-                        <li><a href="/assets/docx/resume.pdf" target="_blank">Resume.</a></li>
+                        <li><a href="./assets/docx/resume.pdf" target="_blank">Resume.</a></li>
                     </ol>
                 </div>
             </nav>
@@ -85,6 +85,58 @@
                             </div>
                         </a>
                     </div>
+
+                    <div class="post-preview">
+                        <a onclick="openWindow('./assets/docx/blog/post-3.html')">
+                            <div class="post-content">
+                                <div class="post-title">
+                                    <h5>Considerations when selecting a WordPress Theme</h5>
+                                </div>
+                                <div class="post-desc">
+                                    <p>When choosing a WordPress theme, it is important to consider the tone you want for your website...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="post-preview">
+                        <a onclick="openWindow('')">
+                            <div class="post-content">
+                                <div class="post-title">
+                                    <h5>Post Title</h5>
+                                </div>
+                                <div class="post-desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="post-preview">
+                        <a onclick="openWindow('')">
+                            <div class="post-content">
+                                <div class="post-title">
+                                    <h5>Post Title</h5>
+                                </div>
+                                <div class="post-desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="post-preview">
+                        <a onclick="openWindow('')">
+                            <div class="post-content">
+                                <div class="post-title">
+                                    <h5>Post Title</h5>
+                                </div>
+                                <div class="post-desc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
                 <div id="show-more" class="btn">Show More</div>
@@ -96,40 +148,84 @@
                 <h2>Portfolio.</h2>
 
                 <div class="section-content">
-                    <h3><a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">danielsgone.com (v1)</a></h3>
-
-                    <p>Since November 2021, I have been responsible for developing and maintaining the website for "Daniel's Gone", a music project. The website, built using HTML, CSS, and JavaScript, serves as a hub for fans, providing links to various popular streaming platforms and other ventures under the project's name.</p>
-                    <p>In addition to creating all front-end components, I also designed all website assets using Photoshop.</p>
-                    <p>Currently, the website is undergoing a rebranding process, hence the reference to "v1". Once the latest iteration is launched, I will continue to oversee updates and enhancements to ensure optimal functionality and user experience."</p>
-                    <h4>Hover over this box to view a short demo!</h4>
-                    <div class="portfolio-content">
-                        <a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">
-                            <video muted loop id="videoPlay" class="video" autoplay>
-                                <source src="./assets/video/danielsgone/fulldemo.mp4" type="video/mp4">
-                            </video>
-                        </a>
-
-                        <div class="video-container">
+                    <div class="portfolio-piece">
+                        <h3><a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">danielsgone.com (v1)</a></h3>
+                        <p>Since November 2021, I have been responsible for developing and maintaining the website for "Daniel's Gone", a music project. The website, built using HTML, CSS, and JavaScript, serves as a hub for fans, providing links to various popular streaming platforms and other ventures under the project's name.</p>
+                        <p>In addition to creating all front-end components, I also designed all website assets using Photoshop.</p>
+                        <p>Currently, the website is undergoing a rebranding process, hence the reference to "v1". Once the latest iteration is launched, I will continue to oversee updates and enhancements to ensure optimal functionality and user experience."</p>
+                        <h4>Hover over this box to view a short demo!</h4>
+                        <div class="portfolio-content">
                             <a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">
-                                <video muted loop class="videoloop" autoplay>
-                                    <source src="./assets/video/danielsgone/welcome_page.mp4" type="video/mp4">
-                                </video>
-                            </a>
-
-                            <a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">
-                                <video muted loop class="videoloop" autoplay>
-                                    <source src="./assets/video/danielsgone/about_page.mp4" type="video/mp4">
+                                <video muted loop class="video" autoplay>
+                                    <source src="./assets/video/danielsgone/fulldemo.mp4" type="video/mp4">
                                 </video>
                             </a>
     
-                            <a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">
-                                <video muted loop class="videoloop" autoplay>
-                                    <source src="./assets/video/danielsgone/audio_page.mp4" type="video/mp4">
+                            <div class="video-container">
+                                <a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">
+                                    <video muted loop class="videoloop" autoplay>
+                                        <source src="./assets/video/danielsgone/welcome_page.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+    
+                                <a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">
+                                    <video muted loop class="videoloop" autoplay>
+                                        <source src="./assets/video/danielsgone/about_page.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+        
+                                <a href="https://danielsgone.com/" target="_blank" rel="noopener noreferrer">
+                                    <video muted loop class="videoloop" autoplay>
+                                        <source src="./assets/video/danielsgone/audio_page.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-piece">
+                        <h3><a href="https://wcet.waketech.edu/daocampo/WEB125/TyrrellCounty/index.html" target="_blank" rel="noopener noreferrer">Tyrrell County Website</a></h3>
+
+                        <p>In the Winter of 2022, I took on the task of redesigning the website for Tyrell County, North Carolina. The main objective of the website is to provide visitors with general information about the county, including its history, trivia, and city events. Additionally, the website features pages that enable visitors to pay their bills and access contact information for officials such as the city council and public safety personnel.</p>
+                        <p>For this project, I assumed responsibility for both the front-end and back-end development from scratch, using HTML, CSS, and JavaScript. I leveraged my expertise in these programming languages to create a responsive and intuitive user interface that enables visitors to quickly and easily navigate the site and access the information they need.</p>
+                        <h4>Hover over this box to view a short demo!</h4>
+                        <div class="portfolio-content">
+                            <a href="https://wcet.waketech.edu/daocampo/WEB125/lesson12/index.html" target="_blank" rel="noopener noreferrer">
+                                <video muted loop class="video" autoplay>
+                                    <source src="./assets/video/TyrellCounty/tyrellcountydemo.mp4" type="video/mp4">
+                                </video>
+                            </a>
+
+                            <div class="video-container">
+                                <a href="https://wcet.waketech.edu/daocampo/WEB125/lesson12/index.html" target="_blank" rel="noopener noreferrer">
+                                    <video muted loop class="videoloop" autoplay>
+                                        <source src="./assets/video/TyrellCounty/bills.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+    
+                                <a href="https://wcet.waketech.edu/daocampo/WEB125/lesson12/index.html" target="_blank" rel="noopener noreferrer">
+                                    <video muted loop class="videoloop" autoplay>
+                                        <source src="./assets/video/TyrellCounty/publicsafety.mp4" type="video/mp4">
+                                    </video>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-piece">
+                        <h3><a href="https://wcet.waketech.edu/daocampo/WEB125/lesson12/index.html" target="_blank" rel="noopener noreferrer">Pleasure Island Website</a></h3>
+                        <p>During the fall of 2022, I created a fictional travel website for Pleasure Island, North Carolina. The website showcases essential information for visitors planning a trip to the area, including details on hotels, events, restaurants, and attractions. My aim was to create an interactive and engaging website that would inspire and inform potential tourists about the wonders of Pleasure Island.</p>
+                        <p>As the sole designer of the website, I took on the responsibility of designing the front end using Bootstrap 5. The design process involved carefully selecting colors, fonts, and layouts that would enhance the user experience and highlight the beauty of Pleasure Island. I paid attention to the small details to ensure that the website was visually appealing and easy to navigate.</p>
+                        <p>Overall, my travel website for Pleasure Island, North Carolina showcases my ability to design a visually appealing and functional website.</p>
+                        <h4>Hover over this box to view a short demo!</h4>
+                        <div class="portfolio-content">
+                            <a href="https://wcet.waketech.edu/daocampo/WEB125/lesson12/index.html" target="_blank" rel="noopener noreferrer">
+                                <video muted loop class="video" autoplay>
+                                    <source src="./assets/video/PleasureIsland/pleasureislanddemo.mp4" type="video/mp4">
                                 </video>
                             </a>
                         </div>
                     </div>
-
                 </div>
 
             </section>
