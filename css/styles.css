@@ -138,7 +138,7 @@ a {
     transition: 0.3s;
 }
 
-a:hover, li a:hover {
+a p:hover, li a:hover {
     text-decoration: none;
     opacity: 0.6;
 }
