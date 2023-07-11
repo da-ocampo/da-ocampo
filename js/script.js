@@ -3,6 +3,20 @@
 document.body.style.overflow = "hidden";
 document.documentElement.style.overflow = "auto";
 
+// JavaScript code
+const ellipsisSpan = document.getElementById('ellipsis');
+const dots = ['.', '..', '...']; // Array of ellipsis dots
+let currentDotIndex = 0; // Index of the current dot in the dots array
+
+// Function to update the ellipsis animation
+function updateEllipsisAnimation() {
+  ellipsisSpan.textContent = dots[currentDotIndex]; // Set the current dot as the content of the span
+  currentDotIndex = (currentDotIndex + 1) % dots.length; // Increment the current dot index and loop back to the beginning if necessary
+}
+
+// Start the ellipsis animation
+setInterval(updateEllipsisAnimation, 500); // Change the ellipsis every 500 milliseconds (0.5 seconds)
+
 /* Show More / Show Less */
 
 const blogContainer = document.querySelector('#blog-container');
