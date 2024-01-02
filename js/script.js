@@ -48,7 +48,7 @@ function createWindowElement(url) {
   windowEl.appendChild(titlebarEl);
 
   titlebarEl.appendChild(createElementWithClass('div', 'close', 'x'));
-  windowEl.appendChild(createElementWithClass('div', 'full-size-button', 'New Tab'));
+  windowEl.appendChild(createElementWithClass('div', 'full-size-button', 'Open Full Site'));
   titlebarEl.appendChild(createElementWithClass('div', 'resizer'));
 
   const contentEl = createElementWithClass('iframe', 'content');
