@@ -30,7 +30,6 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 .header {
     background-color: #fff;
     padding: 2em 6em;
-    display: flex;
     position: fixed;
     width: 100%;
 }
@@ -193,6 +192,14 @@ footer {
     resize: both;
     transform: scale(1);
     opacity: 1;
+    animation: transitionIn 1s;
+}
+
+.closing {
+    transform: scale(0.5);
+    opacity: 0;
+    animation: transitionOut 1s;
+
 }
 
 .window .titlebar {
@@ -256,6 +263,18 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes transitionOut {
+    from {
+        opacity: 1; 
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20em);
     }
 }
 

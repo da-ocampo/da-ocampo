@@ -42,7 +42,6 @@ function openWindow(url) {
 function createWindowElement(url) {
   const windowEl = document.createElement('div');
   windowEl.classList.toggle('window', true);
-  windowEl.classList.toggle('opening', true);
 
   const titlebarEl = document.createElement('div');
   titlebarEl.classList.toggle('titlebar', true);
@@ -175,33 +174,17 @@ function addWindowListeners(windowEl, url) {
 }
 
 function addAnimation(windowEl) {
-  windowEl.style.transform = 'scale(0.5)';
-  windowEl.style.opacity = 0;
-  windowEl.offsetHeight;
-
-  let startTime;
-
-  function animateOpen(time) {
-    if (!startTime) startTime = time;
-    const progress = (time - startTime) / 500;
-    windowEl.style.transform = `scale(${0.5 + 0.5 * progress})`;
-    windowEl.style.opacity = progress;
-    if (progress < 1) {
-      requestAnimationFrame(animateOpen);
-    } else {
-      windowEl.style.transition = '';
-    }
-  }
-
-  requestAnimationFrame(animateOpen);
+  windowEl.style.transform = 'scale(1)';
+  windowEl.style.opacity = 1;
 }
 
 function closeWindow(windowEl) {
-  windowEl.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
-  windowEl.style.transform = 'scale(0.5)';
-  windowEl.style.opacity = 0;
+  windowEl.classList.add('closing');
 
-  setTimeout(() => body.removeChild(windowEl), 500);
+  setTimeout(() => {
+    body.removeChild(windowEl);
+    windowEl.classList.remove('closing');
+  }, 500);
 }
 
 function bringToFront(windowEl) {
