@@ -197,11 +197,25 @@ function openInNewTab(url) {
   window.open(url, '_blank');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var internalLinks = document.querySelectorAll('a[href^="#"]');
+document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll('a[href^="#"]');
+  
+  function smoothScroll(targetId) {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+          window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+          });
+      }
+  }
 
-    internalLinks.forEach(function(link) {
-        link.removeAttribute('id');
-        link.href = link.href.replace('#', '');
-    });
+  navLinks.forEach(link => {
+      link.addEventListener("click", function(event) {
+          event.preventDefault();
+          
+          const targetId = this.getAttribute("href").substring(1);
+          smoothScroll(targetId);
+      });
+  });
 });
