@@ -5,15 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Daniel Ocampo, Web Developer</title>
-        <!--Favicons-->
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
-        <link rel="mask-icon" href="/assets/img/logo.svg" color="#5bbad5">
-        <!--Styles-->
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/responsive.css">
-        <!--Fonts-->
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+        <link rel="mask-icon" href="assets/img/logo.svg" color="#5bbad5">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -22,13 +24,6 @@
     <body id="container">
         <header class="header">
             <nav class="nav-bar">
-                <!--
-                <a href="#home">
-                    <div id="logo">
-                        <img src="/assets/img/logo.png" alt="logo">
-                    </div>
-                </a>
-                -->
                 <div class="nav-list">
                     <ol>
                         <li><a href="#about">About</a></li>
@@ -68,7 +63,7 @@
                         </div>
                         <div class="portfolio-piece">
                             <h3><a onclick="openWindow('https://painproxy.com')" rel="noopener noreferrer">painproxy.com</a></h3>
-                            <p>Pain Proxy is a decentralized virtual venue within the Endproject network. It serves as a discrimination-free and censorship-free platform for artists of different mediums to showcase their artwork. The space aims to foster creativity and provide a safe environment for artistic expression. Built with HTML, CSS, and JavaScript, the website is currently inactive and will undergo further development as part of the official launch of END. END is an international, interdisciplinary collective that aims to overcome institutional barriers through decentralized applications and protocols.</p>
+                            <p>Pain Proxy is a decentralized virtual venue within the END network. It serves as a discrimination-free and censorship-free platform for artists of different mediums to showcase their artwork. The space aims to foster creativity and provide a safe environment for artistic expression. Built with HTML, CSS, and JavaScript, the website is currently inactive and will undergo further development as part of the official launch of END. END is an international, interdisciplinary collective that aims to overcome institutional barriers through decentralized applications and protocols.</p>
                         </div>
                         <div class="portfolio-piece">
                             <h3><a onclick="openWindow('https://danielsgone.com/')" rel="noopener noreferrer">danielsgone.com (v1)</a></h3>
@@ -76,96 +71,6 @@
                             <p>Currently, the website is undergoing a rebranding process, hence the reference to "v1".</p>
                         </div>
                 </section>
-    
-                <!--
-                <section id="blog">
-                    <h2>Blog.</h2>
-                    <div id="blog-container">
-    
-                        <div class="post-preview">
-                            <a onclick="openWindow('/assets/docx/blog/post-15.html')">
-                                <div class="post-content">
-                                    <div class="post-title">
-                                        <h5>The Future of Web Development: What I'm Excited About</h5>
-                                    </div>
-                                    <div class="post-desc">
-                                        <p>I've been learning web development for a little while now, and one thing that's become clear...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="post-preview">
-                            <a onclick="openWindow('/assets/docx/blog/post-12.html')">
-                                <div class="post-content">
-                                    <div class="post-title">
-                                        <h5>Protecting Your Website: A Developer's Guide to Web Security</h5>
-                                    </div>
-                                    <div class="post-desc">
-                                        <p>One of the most important aspects of my job is making sure that the websites...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="post-preview">
-                            <a onclick="openWindow('/assets/docx/blog/post-11.html')">
-                                <div class="post-content">
-                                    <div class="post-title">
-                                        <h5>Why GitHub Pages is the Best Hosting Service for Starting Developers</h5>
-                                    </div>
-                                    <div class="post-desc">
-                                        <p>I think GitHub Pages is the best hosting service for starting developers. If you're just...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="post-preview">
-                            <a onclick="openWindow('/assets/docx/blog/post-10.html')">
-                                <div class="post-content">
-                                    <div class="post-title">
-                                        <h5>An Introduction to JavaScript Frameworks: React vs Vue vs Angular</h5>
-                                    </div>
-                                    <div class="post-desc">
-                                        <p>As a beginning web developer, I was excited to dive into JavaScript and start building...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="post-preview">
-                            <a onclick="openWindow('/assets/docx/blog/post-8.html')">
-                                <div class="post-content">
-                                    <div class="post-title">
-                                        <h5>The Benefits Of Open-Source Software For Web Development</h5>
-                                    </div>
-                                    <div class="post-desc">
-                                        <p>Open-source software is a popular choice among web developers, and for good reason. Not only...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-    
-                        <div class="post-preview">
-                            <a onclick="openWindow('/assets/docx/blog/post-1.html')">
-                                <div class="post-content">
-                                    <div class="post-title">
-                                        <h5>Secure Password Protection with Magic Auth</h5>
-                                    </div>
-                                    <div class="post-desc">
-                                        <p>The rapid growth of Web3 has provided some of the most innovative technology in the world of...</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div id="show-more" class="btn">Show More</div>
-                    <div id="show-less" class="btn">Show Less</div>
-    
-                </section>
-                -->
                 
                 <section id="contact" style="text-align: center;">
                     <h2>Contact.</h2>
@@ -205,7 +110,7 @@
                 <p><a href="mailto:daocampo2002@gmail.com" target="_blank" rel="noopener noreferrer">daocampo2002@gmail.com</a></p>
             </footer>
         </div>
-        
-        <script src="/js/script.js"></script>
+    
+        <script src="js/script.js" defer></script>
     </body>
 </html>
