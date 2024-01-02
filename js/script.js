@@ -213,3 +213,12 @@ function bringToFront(windowEl) {
 function openInNewTab(url) {
   window.open(url, '_blank');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var internalLinks = document.querySelectorAll('a[href^="#"]');
+
+    internalLinks.forEach(function(link) {
+        link.removeAttribute('id');
+        link.href = link.href.replace('#', '');
+    });
+});

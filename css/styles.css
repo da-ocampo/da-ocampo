@@ -191,6 +191,8 @@ footer {
     height: 70%;
     overflow: hidden;
     resize: both;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .window .titlebar {
