@@ -22,185 +22,189 @@
     <body id="container">
         <header class="header">
             <nav class="nav-bar">
+                <!--
                 <a href="#home">
                     <div id="logo">
                         <img src="/assets/img/logo.png" alt="logo">
                     </div>
                 </a>
-                
+                -->
                 <div class="nav-list">
                     <ol>
-                        <li><a href="#about">About.</a></li>
-                        <li><a href="#portfolio">Portfolio.</a></li>
-                        <li><a href="#blog">Blog.</a></li>
-                        <li><a href="#contact">Contact.</a></li>
-                        <li><a href="/assets/docx/resume.pdf" target="_blank">Resume.</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/assets/docx/resume.pdf" target="_blank">Resume</a></li>
                     </ol>
                 </div>
             </nav>
         </header>
 
-        <main>
-            <section id="home">
-                <h1 class="introh1">Hello. My name is Daniel Ocampo<span id="ellipsis"></span></h1>
-                <div class="section-content">
-                    <h3>As a front-end developer, my expertise lies in crafting captivating digital experiences.</h3>
-                    <a href="#portfolio" class="btn">View Portfolio.</a>
+        <div id="content">
+            <main>
+                <section id="home">
+                    <h1 class="intro">Hello! My name is Daniel Ocampo<span id="ellipsis"></span></h1>
+                    <div class="section-content">
+                        <h3>I'm a front-end developer, dedicated to crafting captivating digital experiences.</h3>
+                        <a href="#portfolio" class="btn">View Portfolio.</a>
+                    </div>
+                </section>
+                
+    
+                <section id="about">
+                    <h2>About.</h2>
+                    <div class="section-content">
+                        <p>Hello! my name is Daniel and I have a passion for creating immersive websites. I am a self-taught front-end developer with experience in multiple programming languages and frameworks. Throughout my career, I have worked as an independent developer, leveraging my self-starting mentality to deliver exceptional results. My interest in web development was sparked in 2018 when I began building small websites for local friends and musicians, and I have been hooked ever since.</p>
+                    </div>
+                </section>
+    
+                <section id="portfolio">
+                    <h2>Portfolio.</h2>
+    
+                    <div class="section-content">
+                        <div class="portfolio-piece">
+                            <h3><a onclick="openWindow('https://ihateomerta.com/')" rel="noopener noreferrer">ihateomerta.com</a></h3>
+                            <p>Omerta is an experimental five-piece band hailing from Houston, Texas. The website, constructed using HTML, CSS, and JavaScript, serves as a centralized hub for fans. It provides links to various streaming services and social media platforms, along with essential information like tour dates and blog posts from band members. Additionally, the site features an e-commerce store built using Shopify.</p>
+                        </div>
+                        <div class="portfolio-piece">
+                            <h3><a onclick="openWindow('https://painproxy.com')" rel="noopener noreferrer">painproxy.com</a></h3>
+                            <p>Pain Proxy is a decentralized virtual venue within the Endproject network. It serves as a discrimination-free and censorship-free platform for artists of different mediums to showcase their artwork. The space aims to foster creativity and provide a safe environment for artistic expression. Built with HTML, CSS, and JavaScript, the website is currently inactive and will undergo further development as part of the official launch of END. END is an international, interdisciplinary collective that aims to overcome institutional barriers through decentralized applications and protocols.</p>
+                        </div>
+                        <div class="portfolio-piece">
+                            <h3><a onclick="openWindow('https://danielsgone.com/')" rel="noopener noreferrer">danielsgone.com (v1)</a></h3>
+                            <p>Daniel's Gone is an electronic music project based in Houston, Texas. The site is built using HTML, CSS, and JavaScript, serving as a hub for listeners by providing links to various popular streaming platforms and other ventures under the project's name. In addition to creating all front-end components, I also designed all website assets using Photoshop.</p>
+                            <p>Currently, the website is undergoing a rebranding process, hence the reference to "v1".</p>
+                        </div>
+                </section>
+    
+                <!--
+                <section id="blog">
+                    <h2>Blog.</h2>
+                    <div id="blog-container">
+    
+                        <div class="post-preview">
+                            <a onclick="openWindow('/assets/docx/blog/post-15.html')">
+                                <div class="post-content">
+                                    <div class="post-title">
+                                        <h5>The Future of Web Development: What I'm Excited About</h5>
+                                    </div>
+                                    <div class="post-desc">
+                                        <p>I've been learning web development for a little while now, and one thing that's become clear...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="post-preview">
+                            <a onclick="openWindow('/assets/docx/blog/post-12.html')">
+                                <div class="post-content">
+                                    <div class="post-title">
+                                        <h5>Protecting Your Website: A Developer's Guide to Web Security</h5>
+                                    </div>
+                                    <div class="post-desc">
+                                        <p>One of the most important aspects of my job is making sure that the websites...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="post-preview">
+                            <a onclick="openWindow('/assets/docx/blog/post-11.html')">
+                                <div class="post-content">
+                                    <div class="post-title">
+                                        <h5>Why GitHub Pages is the Best Hosting Service for Starting Developers</h5>
+                                    </div>
+                                    <div class="post-desc">
+                                        <p>I think GitHub Pages is the best hosting service for starting developers. If you're just...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="post-preview">
+                            <a onclick="openWindow('/assets/docx/blog/post-10.html')">
+                                <div class="post-content">
+                                    <div class="post-title">
+                                        <h5>An Introduction to JavaScript Frameworks: React vs Vue vs Angular</h5>
+                                    </div>
+                                    <div class="post-desc">
+                                        <p>As a beginning web developer, I was excited to dive into JavaScript and start building...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="post-preview">
+                            <a onclick="openWindow('/assets/docx/blog/post-8.html')">
+                                <div class="post-content">
+                                    <div class="post-title">
+                                        <h5>The Benefits Of Open-Source Software For Web Development</h5>
+                                    </div>
+                                    <div class="post-desc">
+                                        <p>Open-source software is a popular choice among web developers, and for good reason. Not only...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+    
+                        <div class="post-preview">
+                            <a onclick="openWindow('/assets/docx/blog/post-1.html')">
+                                <div class="post-content">
+                                    <div class="post-title">
+                                        <h5>Secure Password Protection with Magic Auth</h5>
+                                    </div>
+                                    <div class="post-desc">
+                                        <p>The rapid growth of Web3 has provided some of the most innovative technology in the world of...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div id="show-more" class="btn">Show More</div>
+                    <div id="show-less" class="btn">Show Less</div>
+    
+                </section>
+                -->
+                
+                <section id="contact" style="text-align: center;">
+                    <h2>Contact.</h2>
+                    <div class="section-content contact">
+                        <h3>Feel free to drop me a message via email.</h3>
+                        <h3>I'm always up for a chat!</h3>
+                        <a href="mailto:daocampo2002@gmail.com" class="btn" target="_blank" rel="noopener noreferrer">Contact</a>
+                    </div>
+                </section>
+            </main>
+    
+            <footer>
+                <div id="social-list">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/daocampo/" class="social-icon" target="_blank">
+                                <img 
+                                src="/assets/img/linkedin/linkedin.png"
+                                srcset="/assets/img/linkedin/linkedin-96.png 96w, /assets/img/linkedin/linkedin-48.png 48w, /assets/img/linkedin/linkedin-24.png 24w"
+                                sizes="(max-width: 600px) 100vw, 50vw"
+                                alt="Linkedin Icon">                  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/da-ocampo" class="social-icon" target="_blank">
+                                <img 
+                                src="/assets/img/github/github.png"
+                                srcset="/assets/img/github/github-96.png 96w, /assets/img/github/github-48.png 48w, /assets/img/github/github-24.png 24w"
+                                sizes="(max-width: 600px) 100vw, 50vw"
+                                alt="Github Icon">           
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            
-
-            <section id="about">
-                <h2>About.</h2>
-                <div class="section-content">
-                    <p>Hello! my name is Daniel and I have a passion for creating immersive websites. I am a self-taught front-end developer with experience in multiple programming languages and frameworks. Throughout my career, I have worked as an independent developer, leveraging my self-starting mentality to deliver exceptional results. My interest in web development was sparked in 2018 when I began building small websites for local friends and musicians, and I have been hooked ever since.</p>
-                </div>
-            </section>
-
-            <section id="portfolio">
-                <h2>Portfolio.</h2>
-
-                <div class="section-content">
-                    <div class="portfolio-piece">
-                        <h3><a href="https://ihateomerta.com/" class="port-link" target="_blank" rel="noopener noreferrer">ihateomerta.com</a></h3>
-                        <p>Omerta is an experimental five-piece band hailing from Houston, Texas. The website, constructed using HTML, CSS, and JavaScript, serves as a centralized hub for fans. It provides links to various streaming services and social media platforms, along with essential information like tour dates and blog posts from band members. Additionally, the site features an e-commerce store built using Shopify.</p>
-                    </div>
-                    <div class="portfolio-piece">
-                        <h3><a href="https://painproxy.com" class="port-link" target="_blank" rel="noopener noreferrer">painproxy.com</a></h3>
-                        <p>Pain Proxy is a decentralized virtual venue within the Endproject network. It serves as a discrimination-free and censorship-free platform for artists of different mediums to showcase their artwork. The space aims to foster creativity and provide a safe environment for artistic expression. Built with HTML, CSS, and JavaScript, the website is currently inactive and will undergo further development as part of the official launch of END. END is an international, interdisciplinary collective that aims to overcome institutional barriers through decentralized applications and protocols.</p>
-                    </div>
-                    <div class="portfolio-piece">
-                        <h3><a href="https://danielsgone.com/" class="port-link" target="_blank" rel="noopener noreferrer">danielsgone.com (v1)</a></h3>
-                        <p>Daniel's Gone is an electronic music project based in Houston, Texas. The site is built using HTML, CSS, and JavaScript, serving as a hub for listeners by providing links to various popular streaming platforms and other ventures under the project's name. In addition to creating all front-end components, I also designed all website assets using Photoshop.</p>
-                        <p>Currently, the website is undergoing a rebranding process, hence the reference to "v1".</p>
-                    </div>
-            </section>
-
-            <section id="blog">
-                <h2>Blog.</h2>
-                <div id="blog-container">
-
-                    <div class="post-preview">
-                        <a onclick="openWindow('/assets/docx/blog/post-15.html')">
-                            <div class="post-content">
-                                <div class="post-title">
-                                    <h5>The Future of Web Development: What I'm Excited About</h5>
-                                </div>
-                                <div class="post-desc">
-                                    <p>I've been learning web development for a little while now, and one thing that's become clear...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="post-preview">
-                        <a onclick="openWindow('/assets/docx/blog/post-12.html')">
-                            <div class="post-content">
-                                <div class="post-title">
-                                    <h5>Protecting Your Website: A Developer's Guide to Web Security</h5>
-                                </div>
-                                <div class="post-desc">
-                                    <p>One of the most important aspects of my job is making sure that the websites...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="post-preview">
-                        <a onclick="openWindow('/assets/docx/blog/post-11.html')">
-                            <div class="post-content">
-                                <div class="post-title">
-                                    <h5>Why GitHub Pages is the Best Hosting Service for Starting Developers</h5>
-                                </div>
-                                <div class="post-desc">
-                                    <p>I think GitHub Pages is the best hosting service for starting developers. If you're just...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="post-preview">
-                        <a onclick="openWindow('/assets/docx/blog/post-10.html')">
-                            <div class="post-content">
-                                <div class="post-title">
-                                    <h5>An Introduction to JavaScript Frameworks: React vs Vue vs Angular</h5>
-                                </div>
-                                <div class="post-desc">
-                                    <p>As a beginning web developer, I was excited to dive into JavaScript and start building...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="post-preview">
-                        <a onclick="openWindow('/assets/docx/blog/post-8.html')">
-                            <div class="post-content">
-                                <div class="post-title">
-                                    <h5>The Benefits Of Open-Source Software For Web Development</h5>
-                                </div>
-                                <div class="post-desc">
-                                    <p>Open-source software is a popular choice among web developers, and for good reason. Not only...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="post-preview">
-                        <a onclick="openWindow('/assets/docx/blog/post-1.html')">
-                            <div class="post-content">
-                                <div class="post-title">
-                                    <h5>Secure Password Protection with Magic Auth</h5>
-                                </div>
-                                <div class="post-desc">
-                                    <p>The rapid growth of Web3 has provided some of the most innovative technology in the world of...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="show-more" class="btn">Show More</div>
-                <div id="show-less" class="btn">Show Less</div>
-
-            </section>
-
-            <section id="contact" style="text-align: center;">
-                <h2>Contact.</h2>
-                <div class="section-content contact">
-                    <h3>Interested in what you've seen and would like to connect? feel free to drop me a message via email.</h3>
-                    <h3>I'm always up for a chat!</h3>
-                    <a href="mailto:daocampo2002@gmail.com" class="btn" target="_blank" rel="noopener noreferrer">Contact</a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div id="social-list">
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/daocampo/" class="social-icon" target="_blank">
-                            <img 
-                            src="/assets/img/linkedin/linkedin.png"
-                            srcset="/assets/img/linkedin/linkedin-96.png 96w, /assets/img/linkedin/linkedin-48.png 48w, /assets/img/linkedin/linkedin-24.png 24w"
-                            sizes="(max-width: 600px) 100vw, 50vw"
-                            alt="Linkedin Icon">                  
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/da-ocampo" class="social-icon" target="_blank">
-                            <img 
-                            src="/assets/img/github/github.png"
-                            srcset="/assets/img/github/github-96.png 96w, /assets/img/github/github-48.png 48w, /assets/img/github/github-24.png 24w"
-                            sizes="(max-width: 600px) 100vw, 50vw"
-                            alt="Github Icon">           
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <p><a href="https://github.com/da-ocampo" target="_blank" rel="noopener noreferrer">Designed and Built by Daniel Ocampo</a></p>
-            <p><a href="mailto:daocampo2002@gmail.com" target="_blank" rel="noopener noreferrer">daocampo2002@gmail.com</a></p>
-        </footer>
+    
+                <p><a href="https://github.com/da-ocampo" target="_blank" rel="noopener noreferrer">Designed and Built by Daniel Ocampo</a></p>
+                <p><a href="mailto:daocampo2002@gmail.com" target="_blank" rel="noopener noreferrer">daocampo2002@gmail.com</a></p>
+            </footer>
+        </div>
         
         <script src="/js/script.js"></script>
     </body>

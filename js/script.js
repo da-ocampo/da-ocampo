@@ -3,7 +3,6 @@
 document.body.style.overflow = "hidden";
 document.documentElement.style.overflow = "auto";
 
-// JavaScript code
 const ellipsisSpan = document.getElementById('ellipsis');
 const dots = ['.', '..', '...']; // Array of ellipsis dots
 let currentDotIndex = 0; // Index of the current dot in the dots array
@@ -17,204 +16,177 @@ function updateEllipsisAnimation() {
 // Start the ellipsis animation
 setInterval(updateEllipsisAnimation, 500); // Change the ellipsis every 500 milliseconds (0.5 seconds)
 
-/* Show More / Show Less */
 
-const blogContainer = document.querySelector('#blog-container');
-const posts = blogContainer.querySelectorAll('.post-preview');
-const showMore = document.querySelector('#show-more');
-const showLess = document.querySelector('#show-less');
-
-let displayedPosts = 3;
-
-function showPosts(count) {
-  for (let i = 0; i < posts.length; i++) {
-    if (i < count) {
-      posts[i].style.display = 'inline-block';
-    } else {
-      posts[i].style.display = 'none';
-    }
-  }
-}
-
-showMore.addEventListener('click', () => {
-  displayedPosts = Math.min(displayedPosts + 3, posts.length);
-  showPosts(displayedPosts);
-  
-  if (displayedPosts === posts.length) {
-    showMore.style.display = 'none';
-  }
-  
-  showLess.style.display = 'inline-block';
-});
-
-showLess.addEventListener('click', () => {
-  displayedPosts = Math.max(displayedPosts - 3, 3);
-  showPosts(displayedPosts);
-  
-  if (displayedPosts === 3) {
-    showLess.style.display = 'none';
-  }
-  
-  showMore.style.display = 'inline-block';
-});
-
-showPosts(displayedPosts);
-
-/* Video Hover */
-
-var video = document.getElementById("videoPlay");
-
-video.pause(); // Start Video Paused
-
-video.addEventListener("mouseover", function() {
-  video.play(); 
-}); // Play Video On Hover
-
-video.addEventListener("mouseout", function() {
-  video.pause();
-}); // Pause Video When Mouse is ff
-
-/* Blog Post Window */
+/* Generate Window */
 
 function openWindow(url) {
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+  if (isMobile) {
+    window.open(url, '_blank');
+    return;
+  }
 
-  // Check if a window with the same URL is already open
-  var existingWindow = document.querySelector('.window .content[src="' + url + '"]');
+  const existingWindow = document.querySelector(`.window .content[src="${url}"]`);
   if (existingWindow) {
-    // Bring the existing window to the forefront
     const windows = document.querySelectorAll('.window');
-    windows.forEach(function(w) {
-      w.style.zIndex = 1;
-    });
+    windows.forEach(w => (w.style.zIndex = 1));
     existingWindow.parentElement.style.zIndex = 2;
     return;
   }
 
-  // If no existing window is found, create a new one
-  var windowEl = document.createElement('div');
-  windowEl.classList.add('window'); // Create window div element
-
-  var titlebarEl = document.createElement('div'); // Create titlebar for window
+  const windowEl = document.createElement('div');
+  windowEl.classList.add('window', 'opening');
+  const titlebarEl = document.createElement('div');
   titlebarEl.classList.add('titlebar');
   windowEl.appendChild(titlebarEl);
-
-  var closeEl = document.createElement('div'); // Create close button for titlebar
+  const closeEl = document.createElement('div');
   closeEl.classList.add('close');
   closeEl.textContent = 'x';
   titlebarEl.appendChild(closeEl);
-
-  var contentEl = document.createElement('iframe'); // Create content iframe for window
+  const fullSizeButtonEl = document.createElement('div');
+  fullSizeButtonEl.classList.add('full-size-button');
+  fullSizeButtonEl.textContent = 'New Tab';
+  windowEl.appendChild(fullSizeButtonEl);
+  const resizeEl = document.createElement('div');
+  resizeEl.classList.add('resizer');
+  titlebarEl.appendChild(resizeEl);
+  const contentEl = document.createElement('iframe');
   contentEl.classList.add('content');
   contentEl.src = url;
   windowEl.appendChild(contentEl);
 
-  // Position the window randomly within the user's viewport
-  var viewportWidth = document.documentElement.clientWidth;
-  var viewportHeight = document.documentElement.clientHeight;
-  var maxLeft = viewportWidth - 400;
-  var maxTop = viewportHeight - 300;
-  var minLeft = 50;
-  var minTop = 50;
+  const randomPosition = getRandomPosition();
+  windowEl.style.left = randomPosition.left + 'px';
+  windowEl.style.top = randomPosition.top + 'px';
 
-  // Check existing windows to avoid overlapping
-  const windows = document.querySelectorAll('.window');
-  var existingWindows = Array.from(windows).filter(function(w) {
-    return w !== windowEl;
-  });
-  var overlaps = true;
+  makeDraggable(windowEl, titlebarEl);
+  makeResizable(windowEl, resizeEl);
+  addAnimation(windowEl);
+
+  document.body.appendChild(windowEl);
+
+  closeEl.addEventListener('click', () => closeWindow(windowEl));
+  windowEl.addEventListener('mousedown', () => bringToFront(windowEl));
+  fullSizeButtonEl.addEventListener('click', () => openInNewTab(url));
+}
+
+function getRandomPosition() {
+  const viewportWidth = document.documentElement.clientWidth;
+  const viewportHeight = document.documentElement.clientHeight;
+  const maxLeft = viewportWidth - 400;
+  const maxTop = viewportHeight - 300;
+  const minLeft = 50;
+  const minTop = 50;
+
+  const existingWindows = Array.from(document.querySelectorAll('.window'));
+  let overlaps = true;
+  let left, top;
+
   while (overlaps) {
     overlaps = false;
-    var left = Math.floor(Math.random() * (maxLeft - minLeft + 1) + minLeft);
-    var top = Math.floor(Math.random() * (maxTop - minTop + 1) + minTop);
-    existingWindows.forEach(function(w) {
-      if (overlaps) {
-        return;
-      }
-      var wLeft = parseInt(w.style.left, 10);
-      var wTop = parseInt(w.style.top, 10);
-      var wWidth = w.offsetWidth;
-      var wHeight = w.offsetHeight;
-      if (left + 20 < wLeft + wWidth && left + 380 > wLeft && top + 20 < wTop + wHeight && top + 280 > wTop) {
+    left = Math.floor(Math.random() * (maxLeft - minLeft + 1) + minLeft);
+    top = Math.floor(Math.random() * (maxTop - minTop + 1) + minTop);
+
+    existingWindows.forEach(w => {
+      if (
+        left + 20 < w.offsetLeft + w.offsetWidth &&
+        left + 380 > w.offsetLeft &&
+        top + 20 < w.offsetTop + w.offsetHeight &&
+        top + 280 > w.offsetTop
+      ) {
         overlaps = true;
       }
     });
   }
-  
-  windowEl.style.left = left + 'px';
-  windowEl.style.top = top + 'px';
 
-  var isDragging = false; // Make window draggable
-  var dragStartX, dragStartY;
-  titlebarEl.addEventListener('mousedown', function (event) {
+  return { left, top };
+}
+
+function makeDraggable(windowEl, titlebarEl) {
+  let isDragging = false;
+  let dragStartX, dragStartY;
+
+  titlebarEl.addEventListener('mousedown', event => {
     isDragging = true;
     dragStartX = event.clientX;
     dragStartY = event.clientY;
   });
-  window.addEventListener('mousemove', function (event) {
+
+  window.addEventListener('mousemove', event => {
     if (isDragging) {
-      var diffX = event.clientX - dragStartX;
-      var diffY = event.clientY - dragStartY;
-      windowEl.style.left = (windowEl.offsetLeft + diffX) + 'px';
-      windowEl.style.top = (windowEl.offsetTop + diffY) + 'px';
+      const diffX = event.clientX - dragStartX;
+      const diffY = event.clientY - dragStartY;
+      windowEl.style.left = windowEl.offsetLeft + diffX + 'px';
+      windowEl.style.top = windowEl.offsetTop + diffY + 'px';
       dragStartX = event.clientX;
       dragStartY = event.clientY;
     }
   });
-  window.addEventListener('mouseup', function (event) {
-    isDragging = false;
-  });
 
-  windowEl.addEventListener('mousedown', function (event) { // Make window resizable
+  window.addEventListener('mouseup', () => (isDragging = false));
+}
+
+function makeResizable(windowEl, resizeEl) {
+  resizeEl.addEventListener('mousedown', event => {
     if (event.target.classList.contains('resizer')) {
-      var originalWidth = parseFloat(getComputedStyle(windowEl, null).getPropertyValue('width').replace('px', ''));
-      var originalHeight = parseFloat(getComputedStyle(windowEl, null).getPropertyValue('height').replace('px', ''));
-      var originalX = windowEl.offsetLeft;
-      var originalY = windowEl.offsetTop;
-      var diffX = event.clientX - originalX;
-      var diffY = event.clientY - originalY;
+      const originalX = event.clientX;
+      const originalY = event.clientY;
+
+      function resize(event) {
+        const diffX = event.clientX - originalX;
+        const diffY = event.clientY - originalY;
+        windowEl.style.width = windowEl.offsetWidth + diffX + 'px';
+        windowEl.style.height = windowEl.offsetHeight + diffY + 'px';
+        originalX = event.clientX;
+        originalY = event.clientY;
+      }
+
+      function stopResize() {
+        window.removeEventListener('mousemove', resize);
+        window.removeEventListener('mouseup', stopResize);
+      }
+
       window.addEventListener('mousemove', resize);
       window.addEventListener('mouseup', stopResize);
     }
-    function resize(event) {
-      var width = event.clientX - originalX + diffX;
-      var height = event.clientY - originalY + diffY;
-      windowEl.style.width = (width > 100 ? width : 100) + 'px';
-      windowEl.style.height = (height > 100 ? height : 100) + 'px';
+  });
+}
+
+function addAnimation(windowEl) {
+  windowEl.style.transform = 'scale(0.5)';
+  windowEl.style.opacity = 0;
+  windowEl.offsetHeight;
+
+  let startTime;
+  function animateOpen(time) {
+    if (!startTime) startTime = time;
+    const progress = (time - startTime) / 500;
+    windowEl.style.transform = `scale(${0.5 + 0.5 * progress})`;
+    windowEl.style.opacity = progress;
+    if (progress < 1) {
+      requestAnimationFrame(animateOpen);
+    } else {
+      windowEl.style.transition = '';
     }
-    function stopResize() {
-      window.removeEventListener('mousemove', resize);
-    }
-  });
+  }
 
-  document.body.appendChild(windowEl); // Add window to document
+  requestAnimationFrame(animateOpen);
+}
 
-  windowEl.animate([ // Animate window with expanding out effect
-    { transform: 'scale(0.5)', opacity: 0 },
-    { transform: 'scale(1)', opacity: 1 }
-  ], {
-    duration: 500,
-    easing: 'ease-out'
-  });
+function closeWindow(windowEl) {
+  windowEl.style.transition = 'transform 0.5s ease-out, opacity 0.5s ease-out';
+  windowEl.style.transform = 'scale(0.5)';
+  windowEl.style.opacity = 0;
 
-  closeEl.addEventListener('click', function () { // Add event listener to close button
-    windowEl.animate([ // Animate window with collapsing in effect
-      { transform: 'scale(1)', opacity: 1 },
-      { transform: 'scale(0.5)', opacity: 0 }
-    ], {
-      duration: 500,
-      easing: 'ease-out'
-    });
+  setTimeout(() => document.body.removeChild(windowEl), 500);
+}
 
-    setTimeout(function () { // Remove window after a short delay to allow the effect to finish
-      document.body.removeChild(windowEl);
-    }, 500);
-  });
+function bringToFront(windowEl) {
+  const windows = document.querySelectorAll('.window');
+  windows.forEach(w => (w.style.zIndex = 1));
+  windowEl.style.zIndex = 2;
+}
 
-  windowEl.addEventListener('mousedown', function() { // Bring the window to the forefront when it's clicked on
-    const windows = document.querySelectorAll('.window');
-    windows.forEach(function(w) {
-    w.style.zIndex = 1;
-    });
-    windowEl.style.zIndex = 2;
-  });
+function openInNewTab(url) {
+  window.open(url, '_blank');
 }
