@@ -29,9 +29,13 @@ body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, 
 /* Header Elements */
 .header {
     background-color: #fff;
-    padding: 2em 6em;
+    padding: 1.5em 6em;
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    animation: none;
 }
 
 /* Navigation Elements */
