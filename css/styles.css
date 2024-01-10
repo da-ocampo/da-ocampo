@@ -117,6 +117,55 @@ section {
     font-size: 4em;
 }
 
+.form-hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}
+.form-visible {
+    opacity: 1;
+    max-height: 300px;
+    transition: max-height 1s ease-in, opacity 1s ease-in;
+    margin: 2em 0;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 6px;
+}
+  
+#contactForm > div {
+    display: flex;
+    gap: 15px;
+}
+
+#contactForm input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#subject {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+#message {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    min-height: 150px;
+}  
+
 /* Links */
 a, li a {
     color: #000;
@@ -314,6 +363,14 @@ footer {
 
     .intro {
         font-size: 2.5em;
+    }
+
+    #contactForm > div {
+        flex-direction: column;
+    }
+
+    #contactForm input, #subject, #message {
+        margin-bottom: 10px;
     }
 }
 

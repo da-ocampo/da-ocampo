@@ -219,3 +219,35 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contactButton = document.getElementById("contactButton");
+  const contactForm = document.getElementById("contactForm");
+
+  contactButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (contactForm.classList.contains("form-hidden")) {
+      contactForm.classList.remove("form-hidden");
+      contactForm.classList.add("form-visible");
+      contactButton.textContent = "Submit";
+    } else {
+      sendEmail();
+    }
+  });
+
+  function sendEmail() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink = `mailto:daocampo2002@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+  }
+});

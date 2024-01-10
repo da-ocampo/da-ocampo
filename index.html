@@ -68,15 +68,23 @@
                             <p>Daniel's Gone is an electronic music project based in Houston, Texas. The site is built using HTML, CSS, and JavaScript, serving as a hub for listeners by providing links to various popular streaming platforms and other ventures under the project's name. In addition to creating all front-end components, I also designed all website assets using Photoshop.</p>
                         </div>
                 </section>
-                
+
                 <section id="contact" style="text-align: center;">
                     <h2>Contact</h2>
                     <div class="section-content contact">
                         <h3>Feel free to drop me a message via email.</h3>
                         <h3>I'm always up for a chat!</h3>
-                        <a href="mailto:daocampo2002@gmail.com" class="btn" target="_blank" rel="noopener noreferrer">Contact</a>
+                        <form id="contactForm" class="form-hidden">
+                            <div>
+                                <input type="text" id="name" placeholder="Name">
+                                <input type="email" id="email" placeholder="Email">
+                                <input type="tel" id="phone" placeholder="Phone">
+                            </div>
+                            <input type="text" id="subject" placeholder="Subject">
+                            <textarea id="message" placeholder="Message"></textarea>
+                        </form>
+                        <a id="contactButton" class="btn">Contact</a>
                     </div>
-
                 </section>
             </main>
     
