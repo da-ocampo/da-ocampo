@@ -1,0 +1,10 @@
+{
+    "name": "Golden Tiger Eclipse, Jade Hare Prosperity",
+    "description": "Golden Tiger Eclipse, Jade Hare Prosperity is the 2023 edition of Li Xi: an [Endproject](https://endproject.xn--mk1bu44c) endeavor.",
+    "image": "https://endproject.xn--mk1bu44c/lixi/2023/golden-tiger-eclipse-jade-hare-prosperity.png",
+    "banner": "https://endproject.xn--mk1bu44c/lixi/2023/golden-tiger-eclipse-jade-hare-prosperity.png",
+    "external_link": "https://endproject.xn--mk1bu44c/",
+    "collaborators": ["0x566De811B91183EB455B71B0833424bA5e005898", "0x6c71b204b394c9B8ADd99Ea37B6d1c2fc2b130FF", "0x66a2469f2501FEcC937Df3e023d70aAAAE1F1221"],
+    "seller_fee_basis_points": 500,
+    "fee_recipient": "0x566De811B91183EB455B71B0833424bA5e005898"
+}
