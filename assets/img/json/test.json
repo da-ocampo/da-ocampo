@@ -1,0 +1,10 @@
+{
+    "name": "Kokuhaku",
+    "description": "This is a test.",
+    "image": "https://da-ocampo.com/assets/img/json/test.png",
+    "banner": "https://da-ocampo.com/assets/img/json/test.png",
+    "external_link": "https://end.닷컴",
+    "collaborators": ["0x566De811B91183EB455B71B0833424bA5e005898", "0x6c71b204b394c9B8ADd99Ea37B6d1c2fc2b130FF", "0x66a2469f2501FEcC937Df3e023d70aAAAE1F1221"],
+    "seller_fee_basis_points": 500,
+    "fee_recipient": "0x566De811B91183EB455B71B0833424bA5e005898"
+}
