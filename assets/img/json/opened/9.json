@@ -1,0 +1,36 @@
+{
+  "name": "Kokuhaku 9",
+  "description": "[Kokuhaku](https://kokuhaku.org) is a collection of 10,000 unique envelopes, each featuring a distinct design in both its closed and opened states.\n \nEvery ending is a new beginning. There's no reason to mourn the past, and there's no reason to fear the future. \nThe rain is here to wash yesterday away. If you hide inside, you'll miss today's rainbow. \nI know you feel alone. I know you feel misunderstood. I know you feel lost. I know you feel scared. But I'm standing right next to you, hand in hand, and I'll never let go.  \nThere is no distance between our hearts. Run towards the horizon with truth as your compass, and I'll meet you there. \nLet's face the present together. We'll never lose with God on our side. \nI love you.",
+  "image": "https://da-ocampo.com/assets/img/json/opened/9.png",
+  "edition": 9,
+  "attributes": [
+    {
+      "trait_type": "Text",
+      "value": "The Jade Rabbit sends spring home, and the Divine Dragon arrives on the snow. In the new year, I wish you: move forward calmly and be rewarded by time"
+    },
+    {
+      "trait_type": "Flowers",
+      "value": 9
+    },
+    {
+      "trait_type": "Border",
+      "value": "Blurred Border"
+    },
+    {
+      "trait_type": "Dumpling",
+      "value": "See Through"
+    },
+    {
+      "trait_type": "Bowl",
+      "value": "Jade"
+    },
+    {
+      "trait_type": "Floor",
+      "value": "Chartreuse"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Starry Night"
+    }
+  ]
+}
