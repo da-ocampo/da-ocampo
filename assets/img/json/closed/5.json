@@ -1,0 +1,44 @@
+{
+  "name": "test 5",
+  "description": "tesrt",
+  "image": "https://end.xn--mk1bu44c/kokuhaku/2024/img/closed/5.png",
+  "edition": 5,
+  "attributes": [
+    {
+      "trait_type": "Bow",
+      "value": "Salvia Blue"
+    },
+    {
+      "trait_type": "Ribbon Border",
+      "value": "Madder Brown"
+    },
+    {
+      "trait_type": "Ribbon",
+      "value": "Burnt Sienna"
+    },
+    {
+      "trait_type": "Charm",
+      "value": "Pomegranate"
+    },
+    {
+      "trait_type": "Decorations",
+      "value": 4
+    },
+    {
+      "trait_type": "Envelope Top Border",
+      "value": "Pastel Serenity"
+    },
+    {
+      "trait_type": "Blessing",
+      "value": "Great fortune and great profit"
+    },
+    {
+      "trait_type": "Envelope Seal",
+      "value": "Grayish Lavender"
+    },
+    {
+      "trait_type": "Envelope Bottom",
+      "value": "Rhododendron "
+    }
+  ]
+}

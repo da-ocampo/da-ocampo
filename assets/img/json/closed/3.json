@@ -1,0 +1,44 @@
+{
+  "name": "test 3",
+  "description": "tesrt",
+  "image": "https://end.xn--mk1bu44c/kokuhaku/2024/img/closed/3.png",
+  "edition": 3,
+  "attributes": [
+    {
+      "trait_type": "Bow",
+      "value": "Turquoise Green"
+    },
+    {
+      "trait_type": "Ribbon Border",
+      "value": "Lilac Border"
+    },
+    {
+      "trait_type": "Ribbon",
+      "value": "Carmine Red Dragon"
+    },
+    {
+      "trait_type": "Charm",
+      "value": "Pomegranate"
+    },
+    {
+      "trait_type": "Decorations",
+      "value": 4
+    },
+    {
+      "trait_type": "Envelope Top Border",
+      "value": "Yin and Yang"
+    },
+    {
+      "trait_type": "Blessing",
+      "value": "Good fortune and may all your wishes come true"
+    },
+    {
+      "trait_type": "Envelope Seal",
+      "value": "Grayish Lavender"
+    },
+    {
+      "trait_type": "Envelope Bottom",
+      "value": "Columbine"
+    }
+  ]
+}

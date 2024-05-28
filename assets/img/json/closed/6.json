@@ -1,0 +1,44 @@
+{
+  "name": "test 6",
+  "description": "tesrt",
+  "image": "https://end.xn--mk1bu44c/kokuhaku/2024/img/closed/6.png",
+  "edition": 6,
+  "attributes": [
+    {
+      "trait_type": "Bow",
+      "value": "Rosolanc Purole"
+    },
+    {
+      "trait_type": "Ribbon Border",
+      "value": "Imperial Dark Medici Blue"
+    },
+    {
+      "trait_type": "Ribbon",
+      "value": "Mineral Gray Blossom"
+    },
+    {
+      "trait_type": "Charm",
+      "value": "Tangerine"
+    },
+    {
+      "trait_type": "Decorations",
+      "value": 2
+    },
+    {
+      "trait_type": "Envelope Top Border",
+      "value": "Autumn Lantern"
+    },
+    {
+      "trait_type": "Blessing",
+      "value": "Wishing you prosperity and wealth"
+    },
+    {
+      "trait_type": "Envelope Seal",
+      "value": "Violet Red"
+    },
+    {
+      "trait_type": "Envelope Bottom",
+      "value": "Morning Glory"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "test 2",
+  "description": "tesrt",
+  "image": "https://end.xn--mk1bu44c/kokuhaku/2024/img/closed/2.png",
+  "edition": 2,
+  "attributes": [
+    {
+      "trait_type": "Bow",
+      "value": "Neutral Gray"
+    },
+    {
+      "trait_type": "Ribbon Border",
+      "value": "Olympic Blue"
+    },
+    {
+      "trait_type": "Ribbon",
+      "value": "Light Mauve Blossom"
+    },
+    {
+      "trait_type": "Charm",
+      "value": "Tangerine"
+    },
+    {
+      "trait_type": "Decorations",
+      "value": 1
+    },
+    {
+      "trait_type": "Envelope Top Border",
+      "value": "Silk Dynasty"
+    },
+    {
+      "trait_type": "Blessing",
+      "value": "Good fortune"
+    },
+    {
+      "trait_type": "Envelope Seal",
+      "value": "Green"
+    },
+    {
+      "trait_type": "Envelope Bottom",
+      "value": "Camellia"
+    }
+  ]
+}

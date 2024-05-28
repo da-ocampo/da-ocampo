@@ -1,0 +1,44 @@
+{
+  "name": "test 9",
+  "description": "tesrt",
+  "image": "https://end.xn--mk1bu44c/kokuhaku/2024/img/closed/9.png",
+  "edition": 9,
+  "attributes": [
+    {
+      "trait_type": "Bow",
+      "value": "Cossack Green"
+    },
+    {
+      "trait_type": "Ribbon Border",
+      "value": "Lilac Border"
+    },
+    {
+      "trait_type": "Ribbon",
+      "value": "Dragon Gate Yellow Green"
+    },
+    {
+      "trait_type": "Charm",
+      "value": "Koi"
+    },
+    {
+      "trait_type": "Decorations",
+      "value": 3
+    },
+    {
+      "trait_type": "Envelope Top Border",
+      "value": "Imperial Phoenix"
+    },
+    {
+      "trait_type": "Blessing",
+      "value": "May everything go as you wish"
+    },
+    {
+      "trait_type": "Envelope Seal",
+      "value": "Violet Red"
+    },
+    {
+      "trait_type": "Envelope Bottom",
+      "value": "Peony"
+    }
+  ]
+}

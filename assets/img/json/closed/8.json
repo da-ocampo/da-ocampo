@@ -1,0 +1,44 @@
+{
+  "name": "test 8",
+  "description": "tesrt",
+  "image": "https://end.xn--mk1bu44c/kokuhaku/2024/img/closed/8.png",
+  "edition": 8,
+  "attributes": [
+    {
+      "trait_type": "Bow",
+      "value": "Hermosa Pink"
+    },
+    {
+      "trait_type": "Ribbon Border",
+      "value": "Vandyke Red"
+    },
+    {
+      "trait_type": "Ribbon",
+      "value": "Burnt Sienna"
+    },
+    {
+      "trait_type": "Charm",
+      "value": "Peach"
+    },
+    {
+      "trait_type": "Decorations",
+      "value": 4
+    },
+    {
+      "trait_type": "Envelope Top Border",
+      "value": "Midnight Lotus"
+    },
+    {
+      "trait_type": "Blessing",
+      "value": "Good fortune"
+    },
+    {
+      "trait_type": "Envelope Seal",
+      "value": "Red"
+    },
+    {
+      "trait_type": "Envelope Bottom",
+      "value": "Sibipiruna"
+    }
+  ]
+}

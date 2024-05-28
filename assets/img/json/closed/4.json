@@ -1,0 +1,44 @@
+{
+  "name": "test 4",
+  "description": "tesrt",
+  "image": "https://end.xn--mk1bu44c/kokuhaku/2024/img/closed/4.png",
+  "edition": 4,
+  "attributes": [
+    {
+      "trait_type": "Bow",
+      "value": "Yellow Ochre"
+    },
+    {
+      "trait_type": "Ribbon Border",
+      "value": "Pyrite Yellow"
+    },
+    {
+      "trait_type": "Ribbon",
+      "value": "Venice Green Crysanthemum"
+    },
+    {
+      "trait_type": "Charm",
+      "value": "Pomegranate"
+    },
+    {
+      "trait_type": "Decorations",
+      "value": 1
+    },
+    {
+      "trait_type": "Envelope Top Border",
+      "value": "Peony Blossom"
+    },
+    {
+      "trait_type": "Blessing",
+      "value": "Good fortune"
+    },
+    {
+      "trait_type": "Envelope Seal",
+      "value": "Yellow Orange"
+    },
+    {
+      "trait_type": "Envelope Bottom",
+      "value": "Fucshia"
+    }
+  ]
+}

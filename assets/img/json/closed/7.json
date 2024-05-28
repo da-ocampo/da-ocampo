@@ -1,0 +1,44 @@
+{
+  "name": "test 7",
+  "description": "tesrt",
+  "image": "https://end.xn--mk1bu44c/kokuhaku/2024/img/closed/7.png",
+  "edition": 7,
+  "attributes": [
+    {
+      "trait_type": "Bow",
+      "value": "Cossack Green"
+    },
+    {
+      "trait_type": "Ribbon Border",
+      "value": "Pyrite Yellow"
+    },
+    {
+      "trait_type": "Ribbon",
+      "value": "Lemon Yellow Blossom"
+    },
+    {
+      "trait_type": "Charm",
+      "value": "Pomegranate"
+    },
+    {
+      "trait_type": "Decorations",
+      "value": 2
+    },
+    {
+      "trait_type": "Envelope Top Border",
+      "value": "Imperial Phoenix"
+    },
+    {
+      "trait_type": "Blessing",
+      "value": "Good fortune"
+    },
+    {
+      "trait_type": "Envelope Seal",
+      "value": "Vinaceous Cinammon"
+    },
+    {
+      "trait_type": "Envelope Bottom",
+      "value": "Marigold"
+    }
+  ]
+}

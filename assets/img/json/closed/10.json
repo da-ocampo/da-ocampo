@@ -1,0 +1,44 @@
+{
+  "name": "test 10",
+  "description": "tesrt",
+  "image": "https://end.xn--mk1bu44c/kokuhaku/2024/img/closed/10.png",
+  "edition": 10,
+  "attributes": [
+    {
+      "trait_type": "Bow",
+      "value": "Yellow Ochre"
+    },
+    {
+      "trait_type": "Ribbon Border",
+      "value": "Imperial English Red"
+    },
+    {
+      "trait_type": "Ribbon",
+      "value": "Cotinga Purple"
+    },
+    {
+      "trait_type": "Charm",
+      "value": "Tangerine"
+    },
+    {
+      "trait_type": "Decorations",
+      "value": 1
+    },
+    {
+      "trait_type": "Envelope Top Border",
+      "value": "Midnight Lotus"
+    },
+    {
+      "trait_type": "Blessing",
+      "value": "Great fortune and great profit"
+    },
+    {
+      "trait_type": "Envelope Seal",
+      "value": "Vinaceous Cinammon"
+    },
+    {
+      "trait_type": "Envelope Bottom",
+      "value": "Morning Glory"
+    }
+  ]
+}
