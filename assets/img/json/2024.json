@@ -1,0 +1,10 @@
+{
+    "name": "Kokuhaku",
+    "description": "[Kokuhaku](https://kokuhaku.org) is a collection of 10,000 unique envelopes, each featuring a distinct design in both its closed and opened states.\n \nEvery ending is a new beginning. There's no reason to mourn the past, and there's no reason to fear the future. \nThe rain is here to wash yesterday away. If you hide inside, you'll miss today's rainbow. \nI know you feel alone. I know you feel misunderstood. I know you feel lost. I know you feel scared. But I'm standing right next to you, hand in hand, and I'll never let go.  \nThere is no distance between our hearts. Run towards the horizon with truth as your compass, and I'll meet you there. \nLet's face the present together. We'll never lose with God on our side. \nI love you.",
+    "image": "https://end.xn--mk1bu44c/kokuhaku/2024/json/2024_open.png",
+    "banner": "https://end.xn--mk1bu44c/kokuhaku/2024/json/2024_closed.png",
+    "external_link": "https://kokuhaku.org",
+    "collaborators": ["everynightdawns.eth", "0x6c71b204b394c9B8ADd99Ea37B6d1c2fc2b130FF", "0x66a2469f2501FEcC937Df3e023d70aAAAE1F1221", "0x4b2Acf93991942FEEB930b8e9CcA4318aB02a724"],
+    "seller_fee_basis_points": 250,
+    "fee_recipient": "everynightdawns.eth"
+}
